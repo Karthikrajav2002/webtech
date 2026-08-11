@@ -1,0 +1,495 @@
+#javascript
+
+*   javascript is a programming language that is used to add functionalities to the webpages.
+
+    we can use javascript both in 'client-side' and 'server side' .
+
+*** how many ways we can write javascript code ***
+    * we can write in two  ways
+
+*1.internl javvascript*
+
+    *writting the js code in the html file is called internal javaascrript.
+
+    * for this we need <script> </script> tag.
+
+    *it should be written inside <body> tag at the end before the </body> tag.
+
+*2.external javascript
+
+    *firstt we have to create one seperate javascrit file by using .js extention.
+
+    *then we have to connect the html and js file by using <script></script>
+
+    *in the script tag we have to give the path of the js file in the src attribute.
+
+### printing statement in javascript 
+
+console.log()
+
+###how to executee javascript program
+
+    we can execute javascript program in both inside the browser and thee outside thhe browser
+
+**in the browser**
+
+    *for executing js progrm inside the browser we need html functionalities
+
+    *we have  to inspect the webpage and go to the console to get the output .
+
+**outside the browser***
+
+    *for this wee have to install nodejs
+
+    *node js javascript runtime environment used to execute js file ooutside of  the browser
+
+    *node filename.js
+
+***tokens of javascript***
+
+    * token is an basic building block or smallest unit in any programming language 
+
+    1.keyyword
+
+    2.identifier
+
+    3.literals
+
+    4.separators
+     
+    5.operrators
+
+***key words
+
+    *keywords are predefined words or reserved words having some meaning.
+
+    *keywords should be written in 'lower case / small letters '
+
+### identifier
+
+    * component where we can assing names.
+
+    ***rules of identifier ***
+
+    *we can not use use keyword as identifier .
+
+    *we cant give space in-between the identifier
+
+    *special character we cant use (except $ and _)
+
+    *we cant starts with numbers
+
+### variables
+
+    *variable is container where we can store the values/data.
+
+    *in js , for creating variables we need 3 keywords
+
+    **'var', 'let' ,'const'**
+
+**var keyword**
+
+    var sname ; //variable declaration 
+
+    sname= 'naveen' //variable intialization
+
+
+    var sage=20; //vd & variable
+
+    sage =23; re instiaalization
+
+    var sname; //redeclaration
+
+    in var redelaration is possible
+
+**let keyword***
+
+    * in let keyword redeclaration is not possiblle
+
+    
+
+
+
+***const keyword***
+
+    *to create any constant variable we need const keyword
+
+    we cant perform re_initialization
+
+    we have to do declaration and initialization at the same line
+
+    ex:
+    do:
+        const no=54;
+        
+    cant do:
+
+        const no;
+
+        no=54;
+
+literals are the data are values assign in the variable
+
+there are two types of data types 
+    *primitive  data types
+        numbers
+        string
+        undefined
+        null
+        bigint
+    *non primitive data types
+        functions 
+        array
+        object
+
+    in js however the oops concept is there we use functions mostly
+
+    in react also the class component are there we use functional components
+
+    ## datatype
+
+    *it is used to know which kind of data we want to assign in the variable.
+
+    *in javascript we have 2 types of datatype.
+
+    **primitive Datatype**
+
+*1.number datatype *
+
+        in js both decimal and non decimal digits belongs to non decimal digits both are belongs to number datatype
+
+
+    **note**
+
+        'typeof' operator is used to know the datatype of any variable.
+
+        eg:
+
+            let hasSkill=true
+
+            console.log(hasSkill)       //true
+
+            console.log(typeof hasSkill)    //boolean
+
+**2.string**
+
+        string is colllection of single or multiple characters that is enclosed with single quotes('') or double quotes("") or back tick(``)
+
+        eg: 
+
+            let sname=`bala`
+            console.log(typeof sname)   //string
+
+
+**3.boolean**
+
+        it can take only two values .(true or false)
+
+
+        eg:
+
+                let isstudent = true;
+
+                console.log(isstudent);
+
+                console.log(typeof isstudent)   //boolean
+
+**4.undefined**
+
+        *any variable that is declared and not initialized, is called as undefined.
+
+        *type of undefined is undefined
+
+
+        eg:
+
+                let empno;
+                console.log(empno)  //undefined
+                console.log(typeof empno)   //undefinedd
+
+**5.NULL DATATYPE
+
+        null is the variable assigned with null
+
+        typeof null is "object"
+
+        eg:
+
+            let sal_emp=null
+
+            console.log(sal_emp)     //null
+
+            console.log(typeof sal_emp)  //object
+
+
+*6. bigint datatype
+
+        * if we want to take large number in javascript we can take this bigint datatype
+
+        *for declaring bigint datatype we have to use ,n, as suffix.
+        
+        eg:
+
+            let ip=35276576597465946597645n
+
+            console.log(ip)
+
+            console.log(typeof ip)  //bigint
+
+**non primitive datatype**
+
+        js having 3 non-primitive datatype
+
+            1.function
+
+            2.array
+
+            3.object
+
+1.how many ways we can use js
+
+2.how many data_types
+
+3.
+
+
+##decision making statement
+
+        1.if
+
+        2.if else 
+
+        3.else if ladder
+
+        4.switch
+
+### if condition
+
+        syntax
+
+                if(condition)
+                {
+                    true statement block
+                }
+###if else condition
+
+                if(cond)
+                {
+
+                }
+
+                else{
+                    
+                }
+
+###elseif ladder
+
+        *if we want to check more than one condition then we should use this.
+
+        *any one block executed means it will not check the remaining blocks.
+
+
+**syntax
+
+            if (cond)
+            {
+
+            }
+            else if(cond)
+            {
+
+            }
+            .
+            .
+            .
+            .
+            .
+            else if(cond)
+            {
+
+            }
+
+            else
+            {
+
+            }
+
+            
+
+### Math object
+
+        *this is one build in object in javascript used to perform mathematical operations.
+
+        1.Math.max()
+            used to find the maximum number
+
+            eg:
+                console.log(math.max(3,1,5))     //5
+
+        2.Math.min()
+
+            it is used to find minimum number
+
+            eg:
+                    Math.min(3,5,8)     //3
+
+        3.Math.sqrt()
+
+            it is used to find the square root of any number
+
+            eg:
+                    Math.sqrt(9)     //3
+
+        4.Math.abs()
+
+            it is used to provide the positive value
+
+            eg:
+                    Math.abs(-34)     //34
+
+        
+        5.Math.floor()
+
+            it is used to provide floor value of the number.
+
+            eg:
+                    Math.floor(5.9)     //5
+
+
+        6.Math.ceil()
+
+            it is used to provide the next value of the number
+
+            eg:
+                    Math.ceil(8.02)     //9
+
+
+        7.Math.round()
+
+            it is used to proovide the roundoff value of the number
+
+            if the decimal value is .5 or more than that it will give the next value.
+
+
+            eg:
+                    Math.round(3.5)     //4
+                    Math.round(3.4)     //3
+
+        8.Math.pow()
+
+            it is used to know the power any number 
+            it takes two parameters base and the power
+
+            eg:
+                    Math.pow(3,2)     //9
+                    Math.round(3,3)     //27
+
+        9.Math.random()
+
+            it is used to generate the random numbers between 0 to 1
+
+            eg:
+                    Math.random()     //any number between 0 to 1
+                    Math.random()*10     //any num between 0 to 10
+                    Math.random()*
+
+
+****for loop****
+
+    syntax:
+
+        for (initialization; condition; updation)
+        {
+
+        }
+
+    example:
+
+        **write a program to print 1 to 10
+
+        for(let i=0; i<=10; i++)
+        {
+            console.log(i);
+        }
+
+
+***while loop
+
+    syntax
+        initialization
+
+        while(condition)
+
+        {
+            updation
+        }
+
+****write a javascript program to print 10 to 20
+
+    let i=10;
+
+    while(i<=10)
+    {
+        console.log((i))
+        i++;
+    }
+
+
+****while loop
+
+    initialization
+
+    do{
+        updation
+    } while(condition;)
+
+    it wll executes at least one even if the condition is not satisfied
+
+    this loop checks the condition at the end it is called as exit controlled loop.
+
+    ****function*****
+
+    //function is the block of code performing some specific task.
+
+    function is used for code reusability
+
+    ****named function
+    function having name is called named function
+
+    function function_name()
+    {
+
+    }
+
+    function_name()
+
+    for executing the function we should call the function by the function name.
+
+    **function with parameters
+
+        parameters are the required arguments in  the function definition
+
+    ****function with return statement
+
+    function sub(a,b)
+    {
+        return a-b
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
