@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event propagation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(black,red,yellow);
+        }
+        .outer{
+            width: 80%;
+            height: 80%;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .middle{
+            width: 80%;
+            height: 80%;
+            background-color: rgb(30, 170, 25);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner{
+            width: 80%;
+            height: 80%;
+            background-color: rgb(15, 134, 170);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ol{
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+        ol>li{
+            background-color: pink;
+            padding: 10px 20px;
+            font-size: 50px;
+            font-weight: bold;
+            border-radius: 10px;
+            list-style: none;
+            
+
+
+        }
+        li:hover{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">
+    
+                </div>
+            </div>
+        </div>
+    </main>
+    <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>react</li>
+    </ol>
+</body>
+<script src="./app.js"></script>
+</html>

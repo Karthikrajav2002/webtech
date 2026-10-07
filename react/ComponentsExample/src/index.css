@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px calc(100vh - 200px) 100px;
+}
+
+.nav{
+  background-color: black;
+  color: white;
+  display :flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.card{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 20px black;
+  border: 20px grey;
+  
+}
+.cart{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 100px;
+
+  
+}

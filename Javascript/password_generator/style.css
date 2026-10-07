@@ -1,0 +1,50 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background: linear-gradient(to top right, red,black);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+main>h1{
+    font-size: 50px;
+    color: aliceblue;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 10px black;
+}
+
+main > .inner{
+    width: 400px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+
+
+}
+header{
+    height: 50px;
+    display: flex;
+    gap: 20px;
+
+}
+
+footer{
+    display:flex;
+    
+   
+    justify-content: space-between;
+
+}
+
+footer > button{
+    padding: 10px 20px;
+}

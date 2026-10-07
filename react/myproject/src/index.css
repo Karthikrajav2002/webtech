@@ -1,0 +1,75 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  padding:0px 5px;
+  height: 100px;
+  justify-content:space-between ;
+  align-items: center;
+  background-color: blue;
+  text-transform: capitalize;
+
+
+}
+
+nav>ul{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  text-transform: capitalize;
+  
+  
+
+
+}
+
+main{
+  height: calc(100vh-100px);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+
+.left button{
+  letter-spacing: 1.6px;
+  border-radius: 5px;
+  color: rgb(197, 218, 218);
+  background-color: rgb(44, 46, 39);
+  padding: 2px;
+  margin: 10px 0;
+
+}
+
+
+.left img{
+  height: 200px;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.left p{
+  padding: 0 20px;
+  text-align: center;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

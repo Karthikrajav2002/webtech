@@ -252,7 +252,37 @@ brr.forEach((ele)=>{
     console.log(ele)
 })
  
+let crr=[1,2,3,4,5]
+let sum=0
+for (let i of crr){
+    sum+=i
+
+}
 
 
+console.log(`the sum of all the elements is ${sum}`)
+
+sum=0
+crr.map((ele)=>{
+    sum+=ele
+})
+console.log(sum)
+
+//3.reduce higher order array method
+
+let tot=crr.reduce((accumulate,ele)=>{
+    return accumulate+ele
+})
+console.log(tot)
 
 
+//4.sort higher order method
+
+let unsorted=[5,3,1,2,4]
+unsorted.sort((a,b)=>{
+    return a-b}
+)
+console.log(unsorted)
+let desc=unsorted.sort((a,b)=>b-a)//it return new arr also and change the existing also.
+console.log(unsorted)
+console.log(desc)
